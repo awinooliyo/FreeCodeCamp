@@ -1,3 +1,10 @@
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -5,25 +12,155 @@ body{
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color: #1b1b32;
+    background-color: rgb(88, 88, 209);
     color: #f5f6f7;
-    font-size: 16px;
+    font-size: 18px;
 }
 
+#description {
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+}
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
 h1, p {
-  margin: 1em auto;
+  margin-top: 0;
+  margin-bottom: 10px;
   text-align: center;
 }
 
+#email-label,
+#name-label,
+#number-label {
+  border-radius: 5px;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+p {
+  font-size: 1.125rem;
+  text-align: left;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 form {
-  width: 80vw;
-  max-width: 500px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
-  padding-bottom: 2em;
+  padding: 20px;
+  background-color: #1b1b32;
+  border-radius: 5px;
+}
+
+input[type="radio"]{
+  width: unset;
+  padding: 10rem;
+  margin: 10px;
 }
 
 label {
   display: block;
   margin: 0.5rem 0;
+}
+
+input {
+  width: 100%;
+}
+
+select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  font-family: inherit;
+  resize: vertical;
+}
+#submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: hwb(120 0% 50%);
+  width: 100%;
+  padding: 0.75rem;
+  color: #f5f6f7;
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+
+
+label{
+  display: block;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.form-group{
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]{
+  display: flex; 
+  flex-direction: row; 
+}
+button:hover {
+  background-color: #45a049;
+}
+
+.referrer p {
+  font-weight: bold;
+}
+
+.referrer label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.referrer input[type="radio"] {
+  margin-right: 5px;
+}
+
+span {
+  font-style: italic;
 }
